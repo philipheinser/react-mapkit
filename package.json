@@ -1,0 +1,32 @@
+{
+  "name": "react-mapkit",
+  "version": "1.0.0",
+  "description": "React components for working with mapkitjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook -o docs"
+  },
+  "keywords": [
+    "mapkit"
+  ],
+  "author": "Philip Heinser",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^3.4.6",
+    "@storybook/addon-info": "^3.4.6",
+    "@storybook/addon-knobs": "^3.4.7",
+    "@storybook/addon-links": "^3.4.6",
+    "@storybook/addon-notes": "^3.4.6",
+    "@storybook/addons": "^3.4.6",
+    "@storybook/react": "^3.4.6",
+    "babel-core": "^6.26.3",
+    "babel-runtime": "^6.26.0",
+    "jsonwebtoken": "^8.3.0"
+  }
+}
