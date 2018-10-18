@@ -30,7 +30,7 @@ export const MapEventProps = MapEvents.reduce((result, current) => {
   return result;
 }, {});
 
-class Map extends Component {
+export class Map extends Component {
   static defaultProps = {
     mapType: 'standard',
     showsScale: 'adaptive',
@@ -119,7 +119,7 @@ export class Wrapper extends Component {
       let script = document.createElement('script');
       script.onload = this.initMap;
       script.async = true;
-      script.src = 'https://cdn.apple-mapkit.com/mk/5.0.x/mapkit.js';
+      script.src = 'https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js';
       document.body.appendChild(script);
     } else {
       this.initMap();
@@ -127,6 +127,7 @@ export class Wrapper extends Component {
   }
 
   initMap = () => {
+
     window.mapkit.init({
       authorizationCallback: this.props.authorizationCallback,
       language: this.props.language,
@@ -140,5 +141,3 @@ export class Wrapper extends Component {
     return <Fragment>{this.props.children}</Fragment>;
   }
 }
-
-export default Map;

@@ -13,10 +13,10 @@ import { linkTo } from '@storybook/addon-links';
 import { withNotes } from '@storybook/addon-notes';
 
 import readme from '../readme.md';
-import Map, { Wrapper, MapEventProps } from '../index';
+import { Map, Wrapper, MapEventProps } from '../index';
 
 const authToken =
-  'eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkY1UzdXWk01NFoifQ.eyJpc3MiOiI2QlM1OVNDOTQyIiwiaWF0IjoxNTI5MDA3NzQyLjI0NSwiZXhwIjoxNTI5MDA5NTQyLjI0NX0.o-SQdLy8SZSzD7fJaW0Ftic-V0H3Fh72vvAwssT1sExEPTs34O4Xw9jlZ0X6NRTErVtoD68LLQ_K7MuY1rHTnw';
+  'eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkY1UzdXWk01NFoifQ.eyJpc3MiOiI2QlM1OVNDOTQyIiwiaWF0IjoxNTM5ODg4OTU3LjMzLCJleHAiOjE1Mzk4OTA3NTcuMzN9.WnJJuXeEv9k4BWVzxrLhe4S20o5yTjr6_Js_4-TL-jSDFj4GwvcCcpbTlFQQqM6IRSAPSglor8grQ5ZkpKYtlg';
 
 storiesOf('Welcome', module).add('to Storybook', () => (
   <div dangerouslySetInnerHTML={{ __html: readme }} />
